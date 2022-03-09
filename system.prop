@@ -36,6 +36,10 @@ persist.vendor.data.mode=concurrent
 # Dexopt
 dalvik.vm.dex2oat64.enabled=true
 
+# FUSE Passthrough
+persist.sys.fuse.passthrough.enable=true
+persist.sys.fuse.bpf.enable=false
+
 # Display
 vendor.display.idle_time=32767
 debug.cpurend.vsync=false
