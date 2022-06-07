@@ -1,0 +1,25 @@
+android_app_import {
+    name: "GrapheneOSCamera",
+    apk: "product/priv-app/Camera-43/Camera-43.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    required: ["app.grapheneos.camera"],
+    overrides: [
+        "SnapdragonCamera",
+        "Snap",
+        "Camera2",
+        "Camera",
+    ],
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "com.android.MGC",
+    sub_dir: "permissions",
+    src: "product/etc/permissions/app.grapheneos.camera.xml",
+    filename_from_src: true,
+    product_specific: true,
+}
