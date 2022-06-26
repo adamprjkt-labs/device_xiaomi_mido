@@ -17,7 +17,7 @@ android_app_import {
 }
 
 prebuilt_etc {
-    name: "com.android.MGC",
+    name: "app.grapheneos.camera",
     sub_dir: "permissions",
     src: "product/etc/permissions/app.grapheneos.camera.xml",
     filename_from_src: true,
